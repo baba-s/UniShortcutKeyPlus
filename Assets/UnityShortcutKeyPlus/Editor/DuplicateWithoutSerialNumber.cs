@@ -8,8 +8,6 @@ namespace KoganeEditorUtils
 	{
 		private const string ITEM_NAME = "Edit/Plus/Duplicate Without Serial Number &d";
 
-		private static readonly int LENGTH = "(Clone)".Length;
-
 		[MenuItem( ITEM_NAME )]
 		public static void Duplicate()
 		{
@@ -18,7 +16,7 @@ namespace KoganeEditorUtils
 			foreach ( var n in Selection.gameObjects )
 			{
 				var clone = GameObject.Instantiate( n, n.transform.parent );
-				clone.name = clone.name.Substring( 0, clone.name.Length - LENGTH );
+				clone.name = n.name;
 				list.Add( clone.GetInstanceID() );
 				Undo.RegisterCreatedObjectUndo( clone, "Duplicate Without Serial Number" );
 			}
