@@ -16,7 +16,7 @@ Unity プロジェクトにインポートします
 
 # ショートカットキー
 
-[f:id:baba_s:20180321143821p:plain]
+![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180321/20180321143821.png)
 
 |ショートカットキー|内容|
 |:--|:--|
