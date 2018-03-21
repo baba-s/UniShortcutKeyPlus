@@ -33,3 +33,7 @@ Unity プロジェクトにインポートします
 |Alt + K|Inspector をデバッグモードに切り替え|
 |F5|再生|
 |Shift + F5|停止|
+
+# 参考
+
+https://bitbucket.org/sirgru/simple-editor-shortcuts-tools-collection
