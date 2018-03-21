@@ -1,39 +1,39 @@
+[日本語の Readme はこちら](https://github.com/baba-s/unity-shortcut-key-plus/blob/master/README_JP.md)  
+
 # Unity Shortcut Key Plus
 
-使用できるショートカットキーを13個追加するエディタ拡張
+Editor extension that adds 13 shortcut keys.
 
-# 開発環境
+# Version
 
 - Unity 2017.3.0f3
 
-# 導入方法
+# Install
 
-1. 下記のページにアクセスして  
-「UnityShortcutKeyPlus.unitypackage」をダウンロードします  
+1. Go to the following page and download "UnityShortcutKeyPlus.unitypackage".  
 https://github.com/baba-s/unity-shortcut-key-plus/blob/master/UnityShortcutKeyPlus.unitypackage?raw=true  
-2. ダウンロードした「UnityShortcutKeyPlus.unitypackage」を  
-Unity プロジェクトにインポートします  
+2. Import the downloaded "UnityShortcutKeyPlus.unitypackage" into the Unity project.  
 
-# ショートカットキー
+# Shortcut Key
 
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/b/baba_s/20180321/20180321143821.png)
 
-|ショートカットキー|内容|
+|Shortcut Key|Action|
 |:--|:--|
-|Alt + ↑|Hierarchy の並び順を上に移動|
-|Alt + ↓|Hierarchy の並び順を下に移動|
-|Alt + Shift + C|コンソールをクリア|
-|Alt + C|Transform の値をコピー|
-|Alt + V|Transform の値を貼り付け|
-|Alt + E|選択解除|
-|Alt + D|オブジェクトを複製（サフィックスは省略）|
-|Alt + A|アクティブ切り替え（Shift + Alt + A と同じ）|
-|Alt + R|オブジェクトの名前から複製時のサフィックスを削除|
-|Alt + L|Inspector のロックを切り替え|
-|Alt + K|Inspector をデバッグモードに切り替え|
-|F5|再生|
-|Shift + F5|停止|
+|Alt + ↑|Move Hierarchy's order up.|
+|Alt + ↓|Move Hierarchy's order down.|
+|Alt + Shift + C|Clear console.|
+|Alt + C|Copy Transform value.|
+|Alt + V|Paste Transform value.|
+|Alt + E|Deselect.|
+|Alt + D|Duplicate game object. (Suffix is omitted.)|
+|Alt + A|Toggle active. (Same as Shift + Alt + A)|
+|Alt + R|Remove the suffix of the sequential number from the name of the object.|
+|Alt + L|Toggle Inspector lock.|
+|Alt + K|Switch Inspector to debug mode.|
+|F5|Play|
+|Shift + F5|Stop|
 
-# 参考
+# Reference
 
 https://bitbucket.org/sirgru/simple-editor-shortcuts-tools-collection
