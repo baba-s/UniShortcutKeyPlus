@@ -10,9 +10,7 @@ Editor extension that adds 13 shortcut keys.
 
 # Install
 
-1. Go to the following page and download "UnityShortcutKeyPlus.unitypackage".  
-https://github.com/baba-s/unity-shortcut-key-plus/blob/master/UnityShortcutKeyPlus.unitypackage?raw=true  
-2. Import the downloaded "UnityShortcutKeyPlus.unitypackage" into the Unity project.  
+"com.baba_s.unity_shortcut_key_plus": "https://github.com/baba-s/unity-shortcut-key-plus.git",
 
 # Shortcut Key
 
