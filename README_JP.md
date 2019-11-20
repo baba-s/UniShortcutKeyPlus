@@ -6,13 +6,11 @@
 
 - Unity 2017.3.0f3
 
-# 導入方法
+# インストール
 
-1. 下記のページにアクセスして  
-「UnityShortcutKeyPlus.unitypackage」をダウンロードします  
-https://github.com/baba-s/unity-shortcut-key-plus/blob/master/UnityShortcutKeyPlus.unitypackage?raw=true  
-2. ダウンロードした「UnityShortcutKeyPlus.unitypackage」を  
-Unity プロジェクトにインポートします  
+```json
+"com.baba_s.unity_shortcut_key_plus": "https://github.com/baba-s/unity-shortcut-key-plus.git",
+```
 
 # ショートカットキー
 
