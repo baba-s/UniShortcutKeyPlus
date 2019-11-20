@@ -10,7 +10,9 @@ Editor extension that adds 13 shortcut keys.
 
 # Install
 
+```json
 "com.baba_s.unity_shortcut_key_plus": "https://github.com/baba-s/unity-shortcut-key-plus.git",
+```
 
 # Shortcut Key
 
