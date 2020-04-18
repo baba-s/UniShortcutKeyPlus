@@ -1,19 +1,19 @@
-using UnityEditor;
+﻿using UnityEditor;
 
-namespace KoganeEditorUtils
+namespace UniShortcutKeyPlus
 {
-	public static class InvertActiveGameObject
+	internal static class InvertActiveGameObject
 	{
-		private const string ITEM_NAME = "Edit/Plus/Invert Active &a";
+		private const string ITEM_NAME = "Edit/UniShortcutKeyPlus/Invert Active &a";
 
 		[MenuItem( ITEM_NAME )]
-		public static void Invert()
+		private static void Invert()
 		{
 			EditorApplication.ExecuteMenuItem( "GameObject/Toggle Active State" );
 		}
 
 		[MenuItem( ITEM_NAME, true )]
-		public static bool CanInvert()
+		private static bool CanInvert()
 		{
 			var gameObjects = Selection.gameObjects;
 			return gameObjects != null && 0 < gameObjects.Length;

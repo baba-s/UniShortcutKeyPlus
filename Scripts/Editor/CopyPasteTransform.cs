@@ -1,21 +1,21 @@
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
-namespace KoganeEditorUtils
+namespace UniShortcutKeyPlus
 {
-	public static class CopyPasteTransform
+	internal static class CopyPasteTransform
 	{
-		private class Data
+		private sealed class Data
 		{
-			public Vector3 m_localPosition;
-			public Quaternion m_localRotation;
-			public Vector3 m_localScale;
+			public readonly Vector3    m_localPosition;
+			public readonly Quaternion m_localRotation;
+			public readonly Vector3    m_localScale;
 
-			public Data( Vector3 localPosition, Quaternion localRotation, Vector3 localScale )
+			private Data( Vector3 localPosition, Quaternion localRotation, Vector3 localScale )
 			{
 				m_localPosition = localPosition;
 				m_localRotation = localRotation;
-				m_localScale = localScale;
+				m_localScale    = localScale;
 			}
 
 			public Data( Transform t ) : this( t.localPosition, t.localRotation, t.localScale )
@@ -23,25 +23,25 @@ namespace KoganeEditorUtils
 			}
 		}
 
-		private const string ITEM_NAME_COPY = "Edit/Plus/Copy Transform Values &c";
-		private const string ITEM_NAME_PASTE = "Edit/Plus/Paste Transform Values &v";
+		private const string ITEM_NAME_COPY  = "Edit/UniShortcutKeyPlus/Copy Transform Values &c";
+		private const string ITEM_NAME_PASTE = "Edit/UniShortcutKeyPlus/Paste Transform Values &v";
 
 		private static Data m_data;
 
 		[MenuItem( ITEM_NAME_COPY )]
-		public static void Copy()
+		private static void Copy()
 		{
 			m_data = new Data( Selection.activeTransform );
 		}
 
 		[MenuItem( ITEM_NAME_COPY, true )]
-		public static bool CanCopy()
+		private static bool CanCopy()
 		{
 			return Selection.activeTransform != null;
 		}
 
 		[MenuItem( ITEM_NAME_PASTE )]
-		public static void Paste()
+		private static void Paste()
 		{
 			foreach ( var n in Selection.gameObjects )
 			{
@@ -49,12 +49,12 @@ namespace KoganeEditorUtils
 				Undo.RecordObject( t, "Paste Transform Values" );
 				t.localPosition = m_data.m_localPosition;
 				t.localRotation = m_data.m_localRotation;
-				t.localScale = m_data.m_localScale;
+				t.localScale    = m_data.m_localScale;
 			}
 		}
 
 		[MenuItem( ITEM_NAME_PASTE, true )]
-		public static bool CanPaste()
+		private static bool CanPaste()
 		{
 			var gameObjects = Selection.gameObjects;
 			return m_data != null && gameObjects != null && 0 < gameObjects.Length;

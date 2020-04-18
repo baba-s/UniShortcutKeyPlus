@@ -1,5 +1,5 @@
 {
-    "name": "UnityShortcutKeyPlus",
+    "name": "UniShortcutKeyPlus",
     "references": [],
     "includePlatforms": [
         "Editor"
@@ -10,5 +10,6 @@
     "precompiledReferences": [],
     "autoReferenced": false,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }

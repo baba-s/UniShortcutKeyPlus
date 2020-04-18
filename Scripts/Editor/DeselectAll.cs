@@ -1,20 +1,20 @@
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
-namespace KoganeEditorUtils
+namespace UniShortcutKeyPlus
 {
-	public static class DeselectAll
+	internal static class DeselectAll
 	{
-		private const string ITEM_NAME = "Edit/Plus/Deselect All &e";
+		private const string ITEM_NAME = "Edit/UniShortcutKeyPlus/Deselect All &e";
 
 		[MenuItem( ITEM_NAME )]
-		public static void Deselect()
+		private static void Deselect()
 		{
-			Selection.objects = new Object[ 0 ];
+			Selection.objects = new Object[0];
 		}
 
 		[MenuItem( ITEM_NAME, true )]
-		public static bool CanDeselect()
+		private static bool CanDeselect()
 		{
 			var objects = Selection.objects;
 			return objects != null && 0 < objects.Length;

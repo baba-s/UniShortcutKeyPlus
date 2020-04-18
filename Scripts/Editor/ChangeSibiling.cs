@@ -1,11 +1,11 @@
 ﻿using UnityEditor;
 
-namespace KoganeEditorUtils
+namespace UniShortcutKeyPlus
 {
-	public static class ChangeSibiling
+	internal static class ChangeSibiling
 	{
-		private const string ITEM_NAME_UP = "Edit/Plus/Sibiling Up &UP";
-		private const string ITEM_NAME_DOWN = "Edit/Plus/Sibiling Down &DOWN";
+		private const string ITEM_NAME_UP   = "Edit/UniShortcutKeyPlus/Sibiling Up &UP";
+		private const string ITEM_NAME_DOWN = "Edit/UniShortcutKeyPlus/Sibiling Down &DOWN";
 
 		[MenuItem( ITEM_NAME_UP )]
 		private static void Up()

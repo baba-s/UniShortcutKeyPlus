@@ -1,11 +1,11 @@
 ﻿using UnityEditor;
 
-namespace KoganeEditorUtils
+namespace UniShortcutKeyPlus
 {
-	public static class RunUnity
+	internal static class RunUnity
 	{
-		private const string ITEM_NAME_RUN = "Edit/Plus/Run _F5";
-		private const string ITEM_NAME_STOP = "Edit/Plus/Stop #_F5";
+		private const string ITEM_NAME_RUN  = "Edit/UniShortcutKeyPlus/Run _F5";
+		private const string ITEM_NAME_STOP = "Edit/UniShortcutKeyPlus/Stop #_F5";
 
 		[MenuItem( ITEM_NAME_RUN )]
 		private static void Run()

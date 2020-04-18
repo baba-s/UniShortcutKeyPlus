@@ -1,10 +1,10 @@
 ﻿using UnityEditor;
 
-namespace KoganeEditorUtils
+namespace UniShortcutKeyPlus
 {
-	public static class LockInspector
+	internal static class LockInspector
 	{
-		private const string ITEM_NAME = "Edit/Plus/Lock Inspector &l";
+		private const string ITEM_NAME = "Edit/UniShortcutKeyPlus/Lock Inspector &l";
 
 		[MenuItem( ITEM_NAME )]
 		private static void Lock()

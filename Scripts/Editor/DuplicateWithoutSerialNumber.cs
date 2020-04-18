@@ -1,21 +1,21 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace KoganeEditorUtils
+namespace UniShortcutKeyPlus
 {
-	public static class DuplicateWithoutSerialNumber
+	internal static class DuplicateWithoutSerialNumber
 	{
-		private const string ITEM_NAME = "Edit/Plus/Duplicate Without Serial Number &d";
+		private const string ITEM_NAME = "Edit/UniShortcutKeyPlus/Duplicate Without Serial Number &d";
 
 		[MenuItem( ITEM_NAME )]
-		public static void Duplicate()
+		private static void Duplicate()
 		{
 			var list = new List<int>();
 
 			foreach ( var n in Selection.gameObjects )
 			{
-				var clone = GameObject.Instantiate( n, n.transform.parent );
+				var clone = Object.Instantiate( n, n.transform.parent );
 				clone.name = n.name;
 				list.Add( clone.GetInstanceID() );
 				Undo.RegisterCreatedObjectUndo( clone, "Duplicate Without Serial Number" );
@@ -26,7 +26,7 @@ namespace KoganeEditorUtils
 		}
 
 		[MenuItem( ITEM_NAME, true )]
-		public static bool CanDuplicate()
+		private static bool CanDuplicate()
 		{
 			var gameObjects = Selection.gameObjects;
 			return gameObjects != null && 0 < gameObjects.Length;

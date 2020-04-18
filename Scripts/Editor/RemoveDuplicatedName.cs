@@ -1,24 +1,24 @@
-using System.Linq;
+﻿using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEditor;
 
-namespace KoganeEditorUtils
+namespace UniShortcutKeyPlus
 {
-	public static class RemoveDuplicatedName
+	internal static class RemoveDuplicatedName
 	{
-		private const string ITEM_NAME = "Edit/Plus/Remove Duplicated Name &r";
+		private const string ITEM_NAME = "Edit/UniShortcutKeyPlus/Remove Duplicated Name &r";
 
 		private static Regex m_regex = new Regex( @"(.*)(\([0-9]*\))" );
 
 		[MenuItem( ITEM_NAME )]
-		public static void Remove()
+		private static void Remove()
 		{
 			var list = Selection.gameObjects
-				.Where( c => m_regex.IsMatch( c.name ) )
-				.ToArray()
-			;
+					.Where( c => m_regex.IsMatch( c.name ) )
+					.ToArray()
+				;
 
-			if ( list == null || list.Length == 0 ) return;
+			if ( list.Length == 0 ) return;
 
 			foreach ( var n in list )
 			{
@@ -28,7 +28,7 @@ namespace KoganeEditorUtils
 		}
 
 		[MenuItem( ITEM_NAME, true )]
-		public static bool CanRemove()
+		private static bool CanRemove()
 		{
 			var gameObjects = Selection.gameObjects;
 			return gameObjects != null && 0 < gameObjects.Length;
