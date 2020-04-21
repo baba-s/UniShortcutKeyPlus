@@ -1,14 +1,10 @@
 # Uni Shortcut Key Plus
 
-使用できるショートカットキーを13個追加するエディタ拡張
+Unity エディタで使用できるショートカットキーを13個追加するエディタ拡張
 
-# インストール
+## ショートカットキー
 
-```json
-"com.baba-s.unity-shortcut-key-plus": "https://github.com/baba-s/uni-shortcut-key-plus.git",
-```
-
-# ショートカットキー
+![2020-04-21_141749](https://user-images.githubusercontent.com/6134875/79828088-f84b1200-83da-11ea-9fdc-14769b848147.png)
 
 |ショートカットキー|内容|
 |:--|:--|
@@ -26,6 +22,6 @@
 |F5|再生|
 |Shift + F5|停止|
 
-# 参考
+## 参考サイト様
 
-https://bitbucket.org/sirgru/simple-editor-shortcuts-tools-collection
+* https://bitbucket.org/sirgru/simple-editor-shortcuts-tools-collection
